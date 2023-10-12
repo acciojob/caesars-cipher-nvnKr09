@@ -39,6 +39,9 @@ function rot13(encodedStr) {
 		if (lookup.hasOwnProperty(char)) {
 			decodedArr += (lookup[char]);
 		}
+		else if (char == ' ') {
+				decodedArr += char;
+		}
 	}
   return decodedArr; //return decodedArr
 }
